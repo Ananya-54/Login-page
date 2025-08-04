@@ -55,9 +55,9 @@ def generate_otp():
 
     phone = result[0]  # Verified phone number from DB
 
-    TWILIO_SID = 'AC0d497b6210cd2b948bb5c780c2de24f9'
-    TWILIO_AUTH = 'e0e68b1c59132e6e4bea367e1939954a'
-    TWILIO_PHONE = '+18455991348'
+    TWILIO_SID = 'enter your twilio sid'
+    TWILIO_AUTH = 'enter your twilio auth'
+    TWILIO_PHONE = 'enter your twilio phone number'
 
     client = Client(TWILIO_SID, TWILIO_AUTH)
 
@@ -140,5 +140,6 @@ tk.Button(login_frame, text="Register", command=show_register, fg="blue", relief
 
 # Showing registration page first
 register_frame.pack()
+
 
 root.mainloop()
